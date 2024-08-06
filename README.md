@@ -3,7 +3,8 @@
 ## prerequisite
 
 We need to build each child type of Query, Mutation, and Subscription as a parent type. <br>
-In this case, I changed Query/Mutaion/Subscriptions to parent type in `chaos_infrastructure.graphqls` file.
+In this case, I changed Query/Mutaion/Subscriptions to parent type in `chaos_infrastructure.graphqls` file. <br>
+**You can see [this commit](https://github.com/suyeon-jung-dev/litmus-api-docs-test/commit/f9ddd3b02cfc70bccf1220d0f75a04afd012f343)**
 
 Otherwise, we can see these errors.
 ```shell
