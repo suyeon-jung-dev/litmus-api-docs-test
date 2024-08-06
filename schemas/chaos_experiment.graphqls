@@ -715,7 +715,7 @@ type GetExperimentStatsResponse {
   totalExpCategorizedByResiliencyScore: [ResilienceScoreCategory]!
 }
 
-type Query {
+extend type Query {
 
 
   """
@@ -737,7 +737,7 @@ type Query {
   getExperimentStats(projectID: ID!): GetExperimentStatsResponse!
 }
 
-type Mutation {
+extend type Mutation {
   """
   Creates a new experiment and applies its manifest
   """
