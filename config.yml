@@ -1,4 +1,5 @@
 spectaql:
+  targetDir: ./docs
   logoFile: ./assets/logo.png
   faviconFile: ./assets/logo.png
   displayAllServers: true
