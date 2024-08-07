@@ -3,12 +3,11 @@ spectaql:
   logoFile: ./assets/logo.png
   faviconFile: ./assets/logo.png
   displayAllServers: true
+  themeDir: ./docs/custom-theme
 
 introspection:
   removeTrailingPeriodFromDescriptions: false
   schemaFile: ./schemas/*.graphqls
-#  metadataFile: ./examples/data/metadata.json
-#  dynamicExamplesProcessingModule: ./examples/customizations/examples
   queryNameStrategy: capitalizeFirst
   fieldExpansionDepth: 2
 
@@ -19,21 +18,8 @@ extensions:
   graphqlScalarExamples: true
 
 info:
-  title: Litmus Portal API Documentation
+  title: ChaosCenter API Documentation
   description: Litmus Portal provides console and UI experience for managing, monitoring, and events around chaos workflows. Chaos workflows consist of a sequence of experiments run together to achieve the objective of introducing some kind of fault into an application or the Kubernetes platform.
-#  termsOfService: https://www.example.com/terms
-#  contact:
-#    name: API Support
-#    url: http://www.example.com/support
-#    email: support@example.com
-#  license:
-#    name: Apache 2.0
-#    url: https://www.apache.org/licenses/LICENSE-2.0.html
-#  x-introItems:
-#    - title: Important thing 1
-#      description: Some important stuff we wanted you to know. Supports `markdown`
-#  x-url: "./schemas/*.graphqls"
-
 
 servers:
   - url: http://localhost:8080
@@ -41,8 +27,3 @@ servers:
   - url: http://localhost:8080/query
     description: Prod
     production: true
-#    headers:
-#      - name: Authorization
-#        example: Bearer <YOUR_TOKEN_HERE>
-#        comment: Your foo from bar
-
